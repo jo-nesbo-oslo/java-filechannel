@@ -1,0 +1,20 @@
+package com.solucioneskabec;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
+public class ReadFileLineByLineUsingFiles  {
+	public static void main(String[] args) {
+		try {
+			List<String> allLines = Files.readAllLines(Paths.get("test.txt"));
+
+			for (String line : allLines) {
+				System.out.println(line);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
