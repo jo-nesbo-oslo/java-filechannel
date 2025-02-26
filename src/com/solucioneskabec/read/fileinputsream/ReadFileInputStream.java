@@ -14,8 +14,13 @@ public class ReadFileInputStream {
 	*/
 	public static void main(String[] args) {
 
+<<<<<<< HEAD:src/com/solucioneskabec/read/fileinputsream/ReadFileInputStream.java
 		String directoryName = "./resources/data_files/";
 		String fileName = directoryName + "sample_3.txt";
+=======
+		String directory = "./sample_directory/";
+		String fileName = directory + "sample_1.txt";
+>>>>>>> 5d35d8d (Se crea directorio sample_directory y se actualizan rutas en las clases):src/com/solucioneskabec/ReadFileInputStream.java
 
 		// Use try-with-resources to handle resource
 		// management
