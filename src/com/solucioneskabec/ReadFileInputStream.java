@@ -8,7 +8,7 @@ public class ReadFileInputStream {
 
 	public static void main(String[] args) {
 
-		String fileName = "sample_2.txt";
+		String fileName = "sample_1.txt";
 
 		// Use try-with-resources to handle resource
 		// management
