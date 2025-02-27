@@ -1,4 +1,4 @@
-package com.solucioneskabec;
+package com.solucioneskabec.read.fileinputsream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
