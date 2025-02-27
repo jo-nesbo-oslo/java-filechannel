@@ -34,11 +34,9 @@ public class ReadFileInputStream {
 				System.out.print((char) ch);
 			}
 		} catch (FileNotFoundException e) {
-			System.out.println("File not found: Ensure " + 
-								fileName + " exists in the working directory.");
+			System.out.println("File not found: Ensure " + fileName + " exists in the working directory.");
 		} catch (IOException e) {
-			System.out.println("An error occurred while reading the file: " + 
-								e.getMessage());
+			System.out.println("An error occurred while reading the file: " + e.getMessage());
 		}
 
 	}
