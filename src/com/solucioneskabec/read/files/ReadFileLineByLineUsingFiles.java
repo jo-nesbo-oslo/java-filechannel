@@ -7,8 +7,10 @@ import java.util.List;
 
 public class ReadFileLineByLineUsingFiles {
 	public static void main(String[] args) {
+		String directoryName = "./resources/data_files/";
+		String fileName = directoryName + "test.txt";
 		try {
-			List<String> allLines = Files.readAllLines(Paths.get("test.txt"));
+			List<String> allLines = Files.readAllLines(Paths.get(fileName));
 
 			for (String line : allLines) {
 				System.out.println(line);
