@@ -6,19 +6,20 @@ import java.io.IOException;
 public class WriteFileOutputStream {
 
 	public static void main(String[] args) throws IOException {
-		
-		String fileSample = "./sample_1.txt";
+
+		String directoryName = "resources/data_files";
+		String fileName = directoryName + "/" + "sample_1.txt";
 		
 		// we need to transfer this string to files
         String st = "Arturo";
-        writeOutputStream(st, fileSample);
+        writeOutputStream(st, fileName);
  
 		System.out.println("file");
 		
-		fileSample = "./sample_2.txt";
+		fileName = directoryName + "./sample_2.txt";
 		
 		st = "Welcome to GfG";
-        writeOutputStream(st, fileSample);
+        writeOutputStream(st, fileName);
 
 		
 	}
