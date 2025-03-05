@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /*
- * ReadFileInputStream git sample demo
+ * ReadFileInputStream git sample demo 
  */
 public class ReadFileInputStream {
 
