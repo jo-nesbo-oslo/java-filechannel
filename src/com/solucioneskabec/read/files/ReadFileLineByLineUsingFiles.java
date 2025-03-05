@@ -5,10 +5,18 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * @author JARS
+ */
 public class ReadFileLineByLineUsingFiles {
+	
+	/**
+	 * @param args to receive array
+	 * 
+	 */
 	public static void main(String[] args) {
 		String directoryName = "./resources/data_files/";
-		String fileName = directoryName + "test.txt";
+		String fileName = directoryName + "sample_5.txt";
 		try {
 			List<String> allLines = Files.readAllLines(Paths.get(fileName));
 
