@@ -9,7 +9,7 @@ import java.util.List;
  * @author JARS
  */
 public class ReadFileLineByLineUsingFiles {
-	
+
 	/**
 	 * @param args to receive array
 	 * 
@@ -23,8 +23,18 @@ public class ReadFileLineByLineUsingFiles {
 			for (String line : allLines) {
 				System.out.println(line);
 			}
+			System.out.println(printResult(fileName));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	/**
+	 * @param fileName the fileName
+	 * @return message the message
+	 */
+	public static String printResult(String fileName) {
+		String message ="Archivo " + fileName + " leído exitosamente";
+		return message;
 	}
 }

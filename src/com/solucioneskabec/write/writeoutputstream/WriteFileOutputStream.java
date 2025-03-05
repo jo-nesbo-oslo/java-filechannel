@@ -24,6 +24,10 @@ public class WriteFileOutputStream {
 		
 	}
 	
+	/**
+	 * @param stringData
+	 * @param fileSample
+	 */
 	public static void writeOutputStream(String stringData, 
 			String fileSample) throws IOException {
 		FileOutputStream fileOutputStream = new FileOutputStream(fileSample, true);
