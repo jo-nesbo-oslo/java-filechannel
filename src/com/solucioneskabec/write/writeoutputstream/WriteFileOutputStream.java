@@ -25,8 +25,8 @@ public class WriteFileOutputStream {
 	}
 	
 	/**
-	 * @param stringData
-	 * @param fileSample
+	 * @param stringData the stringData
+	 * @param fileSample the fileSample
 	 */
 	public static void writeOutputStream(String stringData, 
 			String fileSample) throws IOException {
