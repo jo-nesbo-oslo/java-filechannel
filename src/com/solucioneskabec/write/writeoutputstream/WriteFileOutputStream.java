@@ -3,6 +3,9 @@ package com.solucioneskabec.write.writeoutputstream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * @author JARS
+ */
 public class WriteFileOutputStream {
 
 	public static void main(String[] args) throws IOException {
