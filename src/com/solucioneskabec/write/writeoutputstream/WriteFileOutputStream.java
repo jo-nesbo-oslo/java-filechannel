@@ -25,8 +25,9 @@ public class WriteFileOutputStream {
 	}
 	
 	/**
-	 * @param stringData stringData
-	 * @param fileSample fileSample
+	 * @author: JARS
+	 * @param stringData the stringData
+	 * @param fileSample the fileSample
 	 */
 	public static void writeOutputStream(String stringData, 
 			String fileSample) throws IOException {
@@ -36,8 +37,8 @@ public class WriteFileOutputStream {
 		int stringLength = stringData.length();
 		for (int i = 0; i < stringLength; i++) {
 			
-			// we will write the string by writing each
-			// character one by one to file
+			/* we will write the string by writing each
+			character one by one to file*/
 			fileOutputStream.write(ch[i]);
 		}
 		fileOutputStream.flush();
