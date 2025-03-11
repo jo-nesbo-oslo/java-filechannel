@@ -15,7 +15,7 @@ public class ReadFileLineByLineUsingFiles {
 	 * 
 	 */
 	public static void main(String[] args) {
-		String directoryName = "./resources/data_files/";
+		String directoryName = "./resources/data_files/sample/";
 		String fileName = directoryName + "sample_5.txt";
 		try {
 			List<String> allLines = Files.readAllLines(Paths.get(fileName));
