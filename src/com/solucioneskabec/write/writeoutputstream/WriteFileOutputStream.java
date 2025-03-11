@@ -10,7 +10,7 @@ public class WriteFileOutputStream {
 
 	public static void main(String[] args) throws IOException {
 
-		String directoryName = "resources/data_files/";
+		String directoryName = "resources/data_files/sample/";
 		String fileName = directoryName + "sample_1.txt";
 		
 		// we need to transfer this string to files
