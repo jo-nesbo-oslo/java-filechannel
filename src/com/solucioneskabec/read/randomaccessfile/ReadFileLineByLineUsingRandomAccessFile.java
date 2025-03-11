@@ -8,7 +8,7 @@ public class ReadFileLineByLineUsingRandomAccessFile {
 
 	public static void main(String[] args) {
 		try {
-			String directoryName = "resources/data_files/";
+			String directoryName = "resources/data_files/sample/";
 			String fileName = directoryName + "sample.txt";
 			RandomAccessFile file = new RandomAccessFile(fileName, "r");
 			String str;
