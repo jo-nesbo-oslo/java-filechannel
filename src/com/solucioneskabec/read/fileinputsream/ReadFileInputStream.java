@@ -14,7 +14,7 @@ public class ReadFileInputStream {
 	*/
 	public static void main(String[] args) {
 
-		String directoryName = "./resources/data_files/";
+		String directoryName = "./resources/data_files/sample/";
 		String fileName = directoryName + "sample_3.txt";
 
 		// Use try-with-resources to handle resource
