@@ -1,4 +1,4 @@
-package com.solucioneskabec.read.randomaccessfile;
+package com.solucioneskabec;
 
 
 import java.io.IOException;

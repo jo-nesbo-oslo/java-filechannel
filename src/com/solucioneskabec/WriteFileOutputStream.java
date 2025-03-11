@@ -1,4 +1,4 @@
-package com.solucioneskabec.write.writeoutputstream;
+package com.solucioneskabec;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

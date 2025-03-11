@@ -1,4 +1,4 @@
-package com.solucioneskabec.read.files;
+package com.solucioneskabec;
 
 import java.io.IOException;
 import java.nio.file.Files;

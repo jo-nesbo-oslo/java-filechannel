@@ -1,4 +1,4 @@
-package com.solucioneskabec.read.fileinputsream;
+package com.solucioneskabec;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,8 +8,7 @@ public class ReadFileInputStream {
 
 	public static void main(String[] args) {
 
-		String directory = "./sample_directory/";
-		String fileName = directory + "sample_1.txt";
+		String fileName = "sample_1.txt";
 
 		// Use try-with-resources to handle resource
 		// management
