@@ -34,7 +34,7 @@ public class WriteFileOutputStream {
 	 */
 	public static void writeOutputStream(String stringData, 
 			String fileSample) throws IOException {
-		try(FileOutputStream fileOutputStream = new FileOutputStream(fileSample, true)){
+		try(FileOutputStream fileOutputStream = new FileOutputStream(fileSample, true)) {
 			char[] ch = stringData.toCharArray();
 			int stringLength = stringData.length();
 			for (int i = 0; i < stringLength; i++) {
@@ -45,7 +45,6 @@ public class WriteFileOutputStream {
 			}
 			fileOutputStream.flush();
 		}
-
 		
 	}
 }
