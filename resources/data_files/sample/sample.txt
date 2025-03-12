@@ -1,0 +1,10 @@
+El concepto de eliminación de archivos se muestra aquí. Esto se hace con un simple comando del método File.delete().
+
+El método Java File delete() se puede usar para eliminar archivos, devolverá un valor booleano. Devuelve verdadero si se elimina el archivo; falso si falla.
+
+En el siguiente programa, estamos usando el método File.delete(). Eliminará el archivo txt llamado "data\\team.txt".
+
+Reading a File Line-by-Line using RandomAccessFile
+You can use RandomAccessFile to open a file in read mode and then use its readLine method to read a file line-by-line.
+
+Here is an example program to read a file line-by-line with RandomAccessFile:
