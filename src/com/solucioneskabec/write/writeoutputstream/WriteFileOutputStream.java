@@ -34,18 +34,18 @@ public class WriteFileOutputStream {
 	 */
 	public static void writeOutputStream(String stringData, 
 			String fileSample) throws IOException {
-		FileOutputStream fileOutputStream = new FileOutputStream(fileSample, true);
-
-		char ch[] = stringData.toCharArray();
-		int stringLength = stringData.length();
-		for (int i = 0; i < stringLength; i++) {
-			
-			/* we will write the string by writing each
-			character one by one to file*/
-			fileOutputStream.write(ch[i]);
+		try(FileOutputStream fileOutputStream = new FileOutputStream(fileSample, true)){
+			char[] ch = stringData.toCharArray();
+			int stringLength = stringData.length();
+			for (int i = 0; i < stringLength; i++) {
+				
+				/* we will write the string by writing each
+				character one by one to file*/
+				fileOutputStream.write(ch[i]);
+			}
+			fileOutputStream.flush();
 		}
-		fileOutputStream.flush();
-		fileOutputStream.close();
+
 		
 	}
 }
