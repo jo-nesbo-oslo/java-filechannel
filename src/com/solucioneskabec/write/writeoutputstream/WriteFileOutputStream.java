@@ -38,7 +38,6 @@ public class WriteFileOutputStream {
 			char[] ch = stringData.toCharArray();
 			int stringLength = stringData.length();
 			for (int i = 0; i < stringLength; i++) {
-				
 				/* we will write the string by writing each
 				character one by one to file*/
 				fileOutputStream.write(ch[i]);
