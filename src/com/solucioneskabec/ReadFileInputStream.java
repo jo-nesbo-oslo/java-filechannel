@@ -25,6 +25,7 @@ public class ReadFileInputStream {
 			System.out.println("Number of remaining bytes: " + fi.available());
 
 			// Illustrating skip() method
+			// check return value
 			fi.skip(0);
 
 			System.out.println("File Contents:");
