@@ -6,8 +6,7 @@ import java.io.IOException;
 /**
  * @author JARS
  */
-public class WriteFileOutputStreamCopy {
-	
+public class WriteFileOutputStreamCopyGit {
 
 	public static void main(String[] args) throws IOException {
 
