@@ -17,10 +17,11 @@ public class WriteFileOutputStreamCopyGit {
         String st = "Arturo";
         writeOutputStream(st, fileName);
  
-		System.out.println("file");
 		
 		fileName = directoryName + "sample_2.txt";
 		
+		System.out.println("file " + directoryName);
+
 		st = "Welcome to GfG";
         writeOutputStream(st, fileName);
 
