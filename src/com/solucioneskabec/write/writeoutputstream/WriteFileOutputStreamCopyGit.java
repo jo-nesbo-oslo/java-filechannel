@@ -5,6 +5,7 @@ import java.io.IOException;
 
 /**
  * @author JARS
+ * @param String args
  */
 public class WriteFileOutputStreamCopyGit {
 
@@ -14,16 +15,17 @@ public class WriteFileOutputStreamCopyGit {
 		String fileName = directoryName + "sample_1.txt";
 		
 		// we need to transfer this string to files
-        String st = "Arturo";
+        String st = "Arturo Acevedo";
         writeOutputStream(st, fileName);
- 
-		System.out.println("file");
+
 		
 		fileName = directoryName + "sample_2.txt";
 		
-		st = "Welcome to GfG";
-        writeOutputStream(st, fileName);
+		// Agregar Logger
+		System.out.println("file " + directoryName);
 
+		st = "Welcome to GFG";
+        writeOutputStream(st, fileName);
 		
 	}
 	
@@ -34,17 +36,6 @@ public class WriteFileOutputStreamCopyGit {
 	 */
 	public static void writeOutputStream(String stringData, 
 			String fileSample) throws IOException {
-<<<<<<< HEAD
-		FileOutputStream fileOutputStream = new FileOutputStream(fileSample, true);
-
-		char ch[] = stringData.toCharArray();
-		int stringLength = stringData.length();
-		for (int i = 0; i < stringLength; i++) {
-			
-			/* we will write the string by writing each
-			character one by one to file*/
-			fileOutputStream.write(ch[i]);
-=======
 		try(FileOutputStream fileOutputStream = new FileOutputStream(fileSample, true)) {
 			char[] ch = stringData.toCharArray();
 			int stringLength = stringData.length();
@@ -54,7 +45,6 @@ public class WriteFileOutputStreamCopyGit {
 				fileOutputStream.write(ch[i]);
 			}
 			fileOutputStream.flush();
->>>>>>> feature-filechannel
 		}
 		fileOutputStream.flush();
 		fileOutputStream.close();
