@@ -26,6 +26,9 @@ public class WriteFileOutputStreamCopyGit {
 
 		st = "Welcome to GFG";
         writeOutputStream(st, fileName);
+
+		System.out.println("file processed" + directoryName);
+		
 		
 	}
 	
@@ -40,14 +43,18 @@ public class WriteFileOutputStreamCopyGit {
 			char[] ch = stringData.toCharArray();
 			int stringLength = stringData.length();
 			for (int i = 0; i < stringLength; i++) {
+
 				/* we will write the string by writing each
 				character one by one to file*/
+
 				fileOutputStream.write(ch[i]);
 			}
+			
 			fileOutputStream.flush();
 		}
 		fileOutputStream.flush();
-		fileOutputStream.close();
+		fileOutputStream.close(); //TODO: resisar si esta línea procede porque está antecedida 
+		// por try with resources
 		
 	}
 }
