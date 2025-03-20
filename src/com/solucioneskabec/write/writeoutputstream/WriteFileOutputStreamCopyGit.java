@@ -27,6 +27,7 @@ public class WriteFileOutputStreamCopyGit {
 		st = "Welcome to GFG";
         writeOutputStream(st, fileName);
 
+		//Agregar Logger
 		System.out.println("file processed" + directoryName);
 		
 		
@@ -53,7 +54,7 @@ public class WriteFileOutputStreamCopyGit {
 			fileOutputStream.flush();
 		}
 		fileOutputStream.flush();
-		fileOutputStream.close(); //TODO: resisar si esta línea procede porque está antecedida 
+		fileOutputStream.close(); //TODO: revisar si esta línea procede porque está antecedida 
 		// por try with resources
 		
 	}
